@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="movieApp">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./styles/style.css"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta charset="UTF-8">
+    <title>The Movie DB</title>
+</head>
+
+<body>
+
+<div class="main_navbar" ng-include src="'./app/views/main_navbar.tmpl.html'"></div>
+<div class="main_navbar" ng-include src="'./app/views/side_navbar.tmpl.html'"></div>
+<div class="main_container container-fluid">
+    <div ng-view>
+
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script data-require="bootstrap@*" data-semver="3.3.7" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.angularjs.org/1.6.5/angular.min.js"></script>
+<script src="https://code.angularjs.org/1.6.5/angular-route.min.js"></script>
+<script src="https://code.angularjs.org/1.6.5/angular-animate.min.js"></script>
+<script src="./app/app.js"></script>
+<script src="./app/app.constant.js"></script>
+<script src="./app/controllers/homeController.js"></script>
+<script src="./app/controllers/contentSearchController.js"></script>
+<script src="./app/services/mediaSearchService.js"></script>
+<script src="./app/services/movieSearchService.js"></script>
+<script src="./app/services/tvShowSearchService.js"></script>
+<script src="./app/services/actorSearchService.js"></script>
+
+</body>
+</html>

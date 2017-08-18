@@ -1,0 +1,18 @@
+<div class="page-header"><h2>ALL MEDIA</h2></div>
+<div class="row">
+    <div class="row__inner">
+
+        <div class="tile animate-repeat" ng-repeat="result in contentSearchVm.results">
+
+            <div class="tile__media">
+                <img class="tile__img" ng-src="{{contentSearchVm.BACKDROP_SITE_PATH}}{{result.backdrop_path}}"
+                     width="250"/>
+            </div>
+            <div class="tile__details">
+                <div class="tile__title">
+                    {{result.name}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

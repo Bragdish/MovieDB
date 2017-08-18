@@ -1,0 +1,22 @@
+<h1>The Movie DB Search Page</h1>
+<div class="searcher">{{contentSearchVm.title}}</div>
+<div class="searchContainer">
+    <input class="searchBox" type="search" ng-model="contentSearchVm.searchContent" placeholder="Search"
+           aria-label="filter friends"
+           ng-change="contentSearchVm.getMedia(contentSearchVm.searchContent);contentSearchVm.getMovies(contentSearchVm.searchContent);contentSearchVm.getTVShows(contentSearchVm.searchContent);contentSearchVm.getActors(contentSearchVm.searchContent);"/>
+</div>
+<!--<div class="resultSet">-->
+<!--<ul class="example-animate-container">-->
+<!--<li class="animate-repeat" ng-repeat="movie in movieSearchVm.movies">-->
+<!--{{movie.id}}-->
+<!--</li>-->
+<!--</ul>-->
+<!--</div>-->
+<div class="mediaresults" ng-include src="'./app/views/allresults.tmpl.html'"></div>
+
+<div class="movieresults" ng-include src="'./app/views/movieresults.tmpl.html'"></div>
+
+<div class="tvshowresults" ng-include src="'./app/views/tvshowresults.tmpl.html'"></div>
+
+<div class="actorresults" ng-include src="'./app/views/actorresults.tmpl.html'"></div>
+
